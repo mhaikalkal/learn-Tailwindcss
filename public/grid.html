@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      // ini bisa disimpen di head kayak gini, atau kita langsung aja ke tailwind.config.js nya langsung
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins"],
+            },
+            aspectRatio: {
+              "4/3": "4/3",
+              "3/4": "3/4",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <div class="container my-10 mx-auto p-2 grid grid-cols-1 gap-2 md:grid-cols-4 md:gap-4 xl:grid-cols-4">
+      <div class="md:col-start-4 md:row-start-2 flex-end">
+        <h2 class="h-15 font-bold text-slate-800 text-xl">Muhammad Haikal</h2>
+      </div>
+      <span class="h-15 text-slate-600 md:self-end md:col-start-2 md:row-start-2">@mhaikalkal</span>
+
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/1.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/2.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/3.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/4.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/5.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-2 overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/6.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-4 overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/7.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/8.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] md:col-start-3 overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/9.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+      <div class="h-15 bg-red-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden group md:hover:scale-95 transition duration-700">
+        <div class="w-full h-full bg-[url('./img/gallery/10.jpg')] bg-cover bg-center group-hover:scale-125 group-hover:rotate-[1.75deg] transition duration-700"></div>
+      </div>
+    </div>
+  </body>
+</html>
